@@ -7,12 +7,47 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/cardapio_droidCaf"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Sobremesas Droid"
+        android:textSize="36sp"
+        android:textStyle="bold"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/dunot"
+        android:layout_width="108dp"
+        android:layout_height="108dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardapio_droidCaf"
+        app:srcCompat="@drawable/donut"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/icecream"
+        android:layout_width="108dp"
+        android:layout_height="108dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dunot"
+        app:srcCompat="@drawable/icecream"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/froyo"
+        android:layout_width="108dp"
+        android:layout_height="108dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/icecream"
+        app:srcCompat="@drawable/froyo"
+        tools:ignore="MissingConstraints" />
 
 </android.support.constraint.ConstraintLayout>
